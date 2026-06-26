@@ -239,9 +239,9 @@ export const learning = [
     title: "SAP UI5 / Fiori (Production)",
     desc: "6+ months of hands-on Fiori development on Siemens' live S/4HANA environment at TCS.",
   },
-  {
-    status: "active",
-    title: "Deutsch (German) — Daily",
-    desc: "Building toward B2 for long-term Germany relocation. Daily practice alongside SAP learning.",
-  },
+  // {
+  //   status: "active",
+  //   title: "Deutsch (German) — Daily",
+  //   desc: "Building toward B2 for long-term Germany relocation. Daily practice alongside SAP learning.",
+  // },
 ];
