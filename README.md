@@ -1,2 +1,2 @@
 # shahabuddin_portfolio
-My Portfolio
+My Portfolio - Showcasing my technical skills and projects.
