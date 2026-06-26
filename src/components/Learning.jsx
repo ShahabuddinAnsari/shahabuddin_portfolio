@@ -19,7 +19,7 @@ export default function Learning() {
             My roadmap
           </p>
           <h2
-            className="font-display font-extrabold text-textmain"
+            className="font-display font-extrabold1 text-textmain"
             style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)" }}
           >
             Learning Resources
