@@ -11,6 +11,16 @@ export default function Hero() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left */}
           <div>
+            {/* Profile photo — mobile only */}
+            <div className="flex justify-center mb-7 md:hidden">
+              <img
+                src="/shahab.png"
+                alt="Shahabuddin Ansari"
+                className="w-44 h-44 rounded-full object-cover border-2 border-accent"
+                style={{ boxShadow: "0 0 28px rgba(0,212,170,0.18)" }}
+              />
+            </div>
+
             <div className="flex items-center gap-3 mb-5">
               <span className="block w-8 h-px bg-accent" />
               <span className="font-mono text-accent text-xs tracking-widest uppercase">
@@ -76,80 +86,95 @@ export default function Hero() {
               ))}
             </div>
           </div>
-          {/* Right — Terminal */}
-          <div className="hidden md:block bg-surface border border-border rounded-xl overflow-hidden font-mono text-sm">
-            {/* Bar */}
-            <div
-              className="flex items-center gap-2 px-4 py-3 border-b border-border"
-              style={{ background: "#1a1a25" }}
-            >
-              <span
-                className="w-2.5 h-2.5 rounded-full"
-                style={{ background: "#ff5f57" }}
+          {/* Right — Photo + Terminal */}
+          <div className="hidden md:flex flex-col gap-5">
+            {/* Profile Photo */}
+            <div className="flex justify-center">
+              <img
+                src="/shahab.png"
+                alt="Shahabuddin Ansari"
+                className="w-56 h-56 rounded-full object-cover border-2 border-accent"
+                style={{ boxShadow: "0 0 28px rgba(0,212,170,0.18)" }}
               />
-              <span
-                className="w-2.5 h-2.5 rounded-full"
-                style={{ background: "#ffbd2e" }}
-              />
-              <span
-                className="w-2.5 h-2.5 rounded-full"
-                style={{ background: "#28ca41" }}
-              />
-              <span className="text-muted text-xs ml-2 tracking-wide">
-                ~/shahabuddin.io
-              </span>
             </div>
 
-            {/* Body */}
-            {/* <div className="p-6 leading-loose text-sm"> */}
-            <div>
-              <span className="text-accent">→ </span>
-              <span className="text-textmain">whoami</span>
+            {/* Terminal */}
+            <div className="bg-surface border border-border rounded-xl overflow-hidden font-mono text-sm">
+              {/* Bar */}
+              <div
+                className="flex items-center gap-2 px-4 py-3 border-b border-border"
+                style={{ background: "#1a1a25" }}
+              >
+                <span
+                  className="w-2.5 h-2.5 rounded-full"
+                  style={{ background: "#ff5f57" }}
+                />
+                <span
+                  className="w-2.5 h-2.5 rounded-full"
+                  style={{ background: "#ffbd2e" }}
+                />
+                <span
+                  className="w-2.5 h-2.5 rounded-full"
+                  style={{ background: "#28ca41" }}
+                />
+                <span className="text-muted text-xs ml-2 tracking-wide">
+                  ~/shahabuddin.io
+                </span>
+              </div>
+
+              {/* Body */}
+              <div className="p-6 leading-loose">
+                <div>
+                  <span className="text-accent">→ </span>
+                  <span className="text-textmain">whoami</span>
+                </div>
+                <div className="text-muted pl-4">
+                  SAP UI5/Fiori Developer @ TCS · Siemens
+                </div>
+                <br />
+                <div>
+                  <span className="text-accent">→ </span>
+                  <span className="text-textmain">cat skills.json</span>
+                </div>
+                <div className="text-muted pl-4">{"{"}</div>
+                <div className="text-muted pl-4">
+                  &nbsp;&nbsp;"sap":{" "}
+                  <span className="text-accent2">
+                    ["UI5","Fiori","ABAP","CDS","RAP","BTP"]
+                  </span>
+                  ,
+                </div>
+                <div className="text-muted pl-4">
+                  &nbsp;&nbsp;"frontend":{" "}
+                  <span className="text-accent2">
+                    ["ReactJS","OData","REST"]
+                  </span>
+                  ,
+                </div>
+                <div className="text-muted pl-4">
+                  &nbsp;&nbsp;"past":{" "}
+                  <span className="text-accent2">
+                    ["UBS","HSBC","Lloyds","UOB"]
+                  </span>
+                </div>
+                <div className="text-muted pl-4">{"}"}</div>
+                <br />
+                <div>
+                  <span className="text-accent">→ </span>
+                  <span className="text-textmain">cat status.txt</span>
+                </div>
+                <div className="text-muted pl-4">
+                  🟢 Open to opportunities in{" "}
+                  <span className="text-accent2">SG / MY</span>
+                </div>
+                <br />
+                <div>
+                  <span className="text-accent">→ </span>
+                  <span className="inline-block w-2 h-4 bg-accent cursor-blink align-middle" />
+                </div>
+              </div>
             </div>
-            <div className="text-muted pl-4">
-              SAP UI5/Fiori Developer @ TCS · Siemens
-            </div>
-            <br />
-            <div>
-              <span className="text-accent">→ </span>
-              <span className="text-textmain">cat skills.json</span>
-            </div>
-            <div className="text-muted pl-4">{"{"}</div>
-            <div className="text-muted pl-4">
-              &nbsp;&nbsp;"sap":{" "}
-              <span className="text-accent2">
-                ["UI5","Fiori","ABAP","CDS","RAP","BTP"]
-              </span>
-              ,
-            </div>
-            <div className="text-muted pl-4">
-              &nbsp;&nbsp;"frontend":{" "}
-              <span className="text-accent2">["ReactJS","OData","REST"]</span>,
-            </div>
-            <div className="text-muted pl-4">
-              &nbsp;&nbsp;"past":{" "}
-              <span className="text-accent2">
-                ["UBS","HSBC","Lloyds","UOB"]
-              </span>
-            </div>
-            <div className="text-muted pl-4">{"}"}</div>
-            <br />
-            <div>
-              <span className="text-accent">→ </span>
-              <span className="text-textmain">cat status.txt</span>
-            </div>
-            <div className="text-muted pl-4">
-              🟢 Open to opportunities in{" "}
-              <span className="text-accent2">SG / MY</span>
-            </div>
-            <br />
-            <div>
-              <span className="text-accent">→ </span>
-              <span className="inline-block w-2 h-4 bg-accent cursor-blink align-middle" />
-            </div>
-            {/* </div> */}
-          </div>{" "}
-          *
+          </div>
         </div>
       </div>
     </section>
