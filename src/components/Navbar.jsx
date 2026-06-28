@@ -26,9 +26,13 @@ export default function Navbar() {
         style={{ height: "60px" }}
       >
         {/* Logo */}
-        <span className="font-mono text-accent text-sm font-medium tracking-wide">
-          shahabuddin.io
-        </span>
+        <a href="#hero" className="no-underline flex items-center">
+          <img
+            src="/logo.jpg"
+            alt="Shahabuddin Ansari"
+            className="h-9 w-auto object-contain"
+          />
+        </a>
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8 list-none">

@@ -30,6 +30,15 @@ function App() {
         <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
         <Learning />
         <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        {/* Profile photo — mobile only, above contact */}
+        <div className="flex justify-center py-12 md:hidden">
+          <img
+            src="/shahab.png"
+            alt="Shahabuddin Ansari"
+            className="w-44 h-44 rounded-full object-cover border-2 border-accent"
+            style={{ boxShadow: "0 0 28px rgba(0,212,170,0.18)" }}
+          />
+        </div>
         <Contact />
       </main>
       <Footer />

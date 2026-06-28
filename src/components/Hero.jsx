@@ -8,20 +8,20 @@ export default function Hero() {
       style={{ paddingTop: "80px" }}
     >
       <div className="max-w-5xl mx-auto px-6 w-full">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>
-            {/* Profile photo — mobile only */}
-            <div className="flex justify-center mb-7 md:hidden">
+            {/* Brand logo */}
+            <div className="flex justify-center md:justify-start mb-6">
               <img
-                src="/shahab.png"
-                alt="Shahabuddin Ansari"
-                className="w-44 h-44 rounded-full object-cover border-2 border-accent"
-                style={{ boxShadow: "0 0 28px rgba(0,212,170,0.18)" }}
+                src="/logo.jpg"
+                alt="Shahabuddin Ansari logo"
+                className="w-44 h-44 md:w-72 md:h-72 rounded-full object-cover border-2 border-accent"
+                style={{ boxShadow: "0 0 36px rgba(0,212,170,0.22)" }}
               />
             </div>
 
-            <div className="flex items-center gap-3 mb-5">
+<div className="flex items-center gap-3 mb-5">
               <span className="block w-8 h-px bg-accent" />
               <span className="font-mono text-accent text-xs tracking-widest uppercase">
                 {profile.title}
@@ -93,8 +93,8 @@ export default function Hero() {
               <img
                 src="/shahab.png"
                 alt="Shahabuddin Ansari"
-                className="w-56 h-56 rounded-full object-cover border-2 border-accent"
-                style={{ boxShadow: "0 0 28px rgba(0,212,170,0.18)" }}
+                className="w-72 h-72 rounded-full object-cover border-2 border-accent"
+                style={{ boxShadow: "0 0 36px rgba(0,212,170,0.22)" }}
               />
             </div>
 
