@@ -16,8 +16,10 @@ export default function Contact() {
           </h2>
           <p className="text-muted text-base leading-relaxed mb-8">
             I'm actively exploring SAP full-stack and UI5/Fiori opportunities in{" "}
-            <strong className="text-textmain">Singapore and Malaysia</strong>.
-            If you're building something interesting or want to collaborate on
+            <strong className="text-textmain">
+              Singapore, Malaysia, Europe, Gulf
+            </strong>
+            . If you're building something interesting or want to collaborate on
             SAP content — reach out.
           </p>
 
@@ -57,7 +59,7 @@ export default function Contact() {
           {/* Availability indicator */}
           <div className="mt-10 flex items-center justify-center gap-2 font-mono text-xs text-muted">
             <div className="w-2 h-2 rounded-full bg-accent pulse-dot" />
-            Currently open to opportunities in Singapore &amp; Malaysia
+            Currently open to opportunities in Singapore, Malaysia, Europe, Gulf
           </div>
         </div>
       </div>
