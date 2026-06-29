@@ -3,7 +3,6 @@ import "@ui5/webcomponents-icons/dist/sap-ui5.js";
 import "@ui5/webcomponents-icons/dist/sap-logo-shape.js";
 import { skills } from "../data";
 
-
 function Tag({ label, hot }) {
   return (
     <li className="flex items-start gap-2 font-mono text-xs">
@@ -42,7 +41,10 @@ export default function Skills() {
             >
               <div className="text-2xl mb-3">
                 {card.ui5Icon ? (
-                  <ui5-icon name={card.ui5Icon} style={{ width: "2rem", height: "2rem", color: "#e8e8f0" }} />
+                  <ui5-icon
+                    name={card.ui5Icon}
+                    style={{ width: "2rem", height: "2rem", color: "#e8e8f0" }}
+                  />
                 ) : (
                   card.icon
                 )}
@@ -52,7 +54,8 @@ export default function Skills() {
               </div>
               <ul className="flex flex-col gap-1.5">
                 {card.tags.map((t) => (
-                  <Tag key={t.label} {...t} />
+                  // <Tag key={t.label} {...t} />
+                  <Tag key={t.label} label={t.label} hot={true} />
                 ))}
               </ul>
             </div>

@@ -24,12 +24,12 @@ export const skills = [
     ui5Icon: "sap-ui5",
     title: "SAP Frontent (UI5 / Fiori)",
     tags: [
-      { label: "SAPUI5", hot: true },
+      { label: "SAP UI5", hot: true },
       { label: "Fiori Elements", hot: true },
       { label: "OData V2/V4", hot: true },
-      { label: "Freestyle Apps", hot: true },
-      { label: "Fiori Launchpad", hot: false },
-      { label: "BAS", hot: false },
+      { label: "Freestyle (Custom UI5) Apps", hot: true },
+      { label: "Fiori Launchpad", hot: true },
+      { label: "BAS", hot: true },
     ],
   },
   {
@@ -40,22 +40,23 @@ export const skills = [
       { label: "ABAP on S4/HANA", hot: true },
       { label: "ABAP on Cloud", hot: true },
       { label: "Core Data Services (CDS)", hot: true },
-      { label: "Restful Application Programming Model (RAP)", hot: true },
-      { label: "Cloud Application Programming Model (CAPM)", hot: true },
-      { label: "S/4HANA", hot: false },
-      { label: "Eclipse ADT", hot: true },
+      { label: "RAP - Restful Application Programming Model", hot: true },
+      { label: "CAP - Cloud Application Programming Model", hot: true },
+      { label: "BTP", hot: true },
+      { label: "NodeJS", hot: true },
+      { label: "JavaScript / ES6", hot: true },
     ],
   },
-  {
-    icon: "☁️",
-    title: "SAP BTP",
-    tags: [
-      { label: "CAP", hot: true },
-      { label: "Build Work Zone", hot: false },
-      { label: "Build Process Auto", hot: false },
-      { label: "CF Runtime", hot: false },
-    ],
-  },
+  // {
+  //   icon: "☁️",
+  //   title: "SAP CAPM",
+  //   tags: [
+  //     { label: "CAP - Cloud Application Programming Model", hot: true },
+  //     { label: "BTP", hot: true },
+  //     { label: "NodeJS", hot: true },
+  //     { label: "JavaScript / ES6", hot: true },
+  //   ],
+  // },
   {
     icon: (
       <svg
@@ -72,7 +73,7 @@ export const skills = [
         </g>
       </svg>
     ),
-    title: "ReactJS (6 yrs)",
+    title: "Frontend Web Dev (ReactJS)",
     tags: [
       { label: "JavaScript", hot: true },
       { label: "React Hooks", hot: false },
