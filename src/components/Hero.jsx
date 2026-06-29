@@ -1,4 +1,14 @@
 import { profile } from "../data";
+import { skills } from "../data";
+
+function Tag({ label, hot }) {
+  return (
+    <li className="flex items-start gap-2 font-mono text-xs">
+      <span className={hot ? "text-accent" : "text-muted"}>▸</span>
+      <span className={hot ? "text-accent" : "text-muted"}>{label}</span>
+    </li>
+  );
+}
 
 export default function Hero() {
   return (
@@ -48,11 +58,14 @@ export default function Hero() {
               <strong className="text-textmain font-medium">16 years</strong>{" "}
               turning complex enterprise systems into clean, usable experiences.
               From QA roots to Frontend Web Developer (ReactJS) at tier-1 banks
-              — now deep in SAP full-stack:{" "}
-              <strong className="text-textmain font-medium">
-                UI5 · Fiori · CAP · BTP · RAP
-              </strong>
-              .<br />
+              — now deep in SAP full-stack:
+              <br />
+              <ul className="flex flex-col gap-1.5">
+                {skills[0].tags.map((tag) => (
+                  <Tag key={tag.label} label={tag.label} hot={true} />
+                ))}
+              </ul>
+              <br />
               Based in Mumbai.
               <br />
               <strong className="text-textmain font-medium">
