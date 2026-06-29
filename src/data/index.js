@@ -18,6 +18,14 @@ export const profile = {
   ],
 };
 
+export const skills_Full_Stack = [
+  { label: "SAP UI5 / Fiori / Fiori Elements" },
+  { label: "SAP BTP" },
+  { label: "SAP ABAP" },
+  { label: "RAP - RestFull Application Programming Model" },
+  { label: "CAP - Cloud Application Programming Model" },
+];
+
 export const skills = [
   {
     icon: "🔷",

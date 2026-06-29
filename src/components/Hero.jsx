@@ -1,5 +1,5 @@
 import { profile } from "../data";
-import { skills } from "../data";
+import { skills_Full_Stack } from "../data";
 
 function Tag({ label, hot }) {
   return (
@@ -61,7 +61,7 @@ export default function Hero() {
               — now deep in SAP full-stack:
               <br />
               <ul className="flex flex-col gap-1.5">
-                {skills[0].tags.map((tag) => (
+                {skills_Full_Stack.map((tag) => (
                   <Tag key={tag.label} label={tag.label} hot={true} />
                 ))}
               </ul>
