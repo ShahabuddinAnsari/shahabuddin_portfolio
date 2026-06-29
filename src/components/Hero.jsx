@@ -21,39 +21,43 @@ export default function Hero() {
               />
             </div>
 
-<div className="flex items-center gap-3 mb-5">
+            <div className="flex items-center gap-3 mb-5">
               <span className="block w-8 h-px bg-accent" />
               <span className="font-mono text-accent text-xs tracking-widest uppercase">
                 {profile.title}
               </span>
             </div>
 
-            <h1
+            {/* <h1
               className="font-display font-extrabold1 leading-none mb-4"
               style={{
-                fontSize: "clamp(2.8rem, 6vw, 4.6rem)",
+                fontSize: "clamp(1.8rem, 3.5vw, 3.6rem)",
                 color: "#e8e8f0",
               }}
             >
-              {/* Shahab<span className="text-accent">uddin</span> */}
               Shahabuddin Ansari
-            </h1>
+            </h1> */}
+            <h2
+              className="font-display font-extrabold1 text-textmain"
+              style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)" }}
+            >
+              Shahabuddin Ansari
+            </h2>
 
             <p className="text-muted text-base mb-8 max-w-md leading-relaxed">
+              <strong className="text-textmain font-medium">16 years</strong>{" "}
+              turning complex enterprise systems into clean, usable experiences.
+              From QA roots to Frontend Web Developer (ReactJS) at tier-1 banks
+              — now deep in SAP full-stack:{" "}
               <strong className="text-textmain font-medium">
-                15+ years in IT.
-              </strong>{" "}
-              From manual QA to React at tier-1 banks — now building
-              enterprise-grade SAP solutions with{" "}
-              <strong className="text-textmain font-medium">
-                UI5 · Fiori · ABAP · BTP
+                UI5 · Fiori · CAP · BTP · RAP
               </strong>
               .<br />
-              Based in Mumbai. Open to{" "}
+              Based in Mumbai.
+              <br />
               <strong className="text-textmain font-medium">
-                {profile.openTo}
+                Open to new opportunities.
               </strong>
-              .
             </p>
 
             <div className="flex gap-3 flex-wrap">
@@ -66,7 +70,8 @@ export default function Hero() {
               </a>
               <a
                 href="#contact"
-                className="border border-border text-textmain text-sm px-6 py-3 rounded hover:border-accent transition-colors no-underline"
+                className="bg-accent font-semibold text-sm px-6 py-3 rounded hover:opacity-85 transition-opacity no-underline"
+                style={{ color: "#0a0a0f" }}
               >
                 Get in Touch
               </a>

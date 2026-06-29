@@ -1,4 +1,8 @@
+import "@ui5/webcomponents/dist/Icon.js";
+import "@ui5/webcomponents-icons/dist/sap-ui5.js";
+import "@ui5/webcomponents-icons/dist/sap-logo-shape.js";
 import { skills } from "../data";
+
 
 function Tag({ label, hot }) {
   return (
@@ -40,7 +44,13 @@ export default function Skills() {
               key={card.title}
               className="reveal bg-bg border border-border rounded p-6 hover:border-accent transition-all duration-200 hover:-translate-y-0.5"
             >
-              <div className="text-2xl mb-3">{card.icon}</div>
+              <div className="text-2xl mb-3">
+                {card.ui5Icon ? (
+                  <ui5-icon name={card.ui5Icon} style={{ width: "2rem", height: "2rem", color: "#e8e8f0" }} />
+                ) : (
+                  card.icon
+                )}
+              </div>
               <div className="font-display font-bold text-textmain text-base mb-3">
                 {card.title}
               </div>

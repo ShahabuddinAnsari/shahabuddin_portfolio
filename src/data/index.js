@@ -5,22 +5,23 @@ export const profile = {
     "16 years in IT. From manual QA to React at tier-1 banks — now building enterprise-grade SAP solutions.",
   stack: ["UI5", "Fiori", "ABAP", "CDS", "RAP", "BTP"],
   location: "Mumbai, India",
-  openTo: "Singapore & Malaysia",
+  openTo: "Available for New Opportunities",
   email: "ansari.extc@gmail.com",
   linkedin: "https://www.linkedin.com/in/shahabuddinansari/",
   github: "https://github.com/ShahabuddinAnsari",
   youtube: "https://www.youtube.com/channel/UCyYEXx3b4LbzXiwLWDuPazQ",
   stats: [
-    { num: "15+", label: "Years in IT" },
+    { num: "16", label: "Years in IT" },
     { num: "6", label: "Years ReactJS" },
     { num: "3", label: "Countries worked" },
-    { num: "∞", label: "Cups of chai" },
+    { num: "∞", label: "Cups of chai/coffee/Teh" },
   ],
 };
 
 export const skills = [
   {
     icon: "🔷",
+    ui5Icon: "sap-ui5",
     title: "SAP UI5 / Fiori",
     tags: [
       { label: "SAPUI5", hot: true },
@@ -33,6 +34,7 @@ export const skills = [
   },
   {
     icon: "⚙️",
+    ui5Icon: "sap-logo-shape",
     title: "ABAP & Backend",
     tags: [
       { label: "ABAP on S4/HANA", hot: true },
@@ -55,7 +57,16 @@ export const skills = [
     ],
   },
   {
-    icon: "⚛️",
+    icon: (
+      <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+        <circle cx="0" cy="0" r="2.05" fill="#61DAFB"/>
+        <g stroke="#61DAFB" strokeWidth="1" fill="none">
+          <ellipse rx="11" ry="4.2"/>
+          <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
+          <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+        </g>
+      </svg>
+    ),
     title: "ReactJS (6 yrs)",
     tags: [
       { label: "JavaScript", hot: true },
