@@ -152,14 +152,15 @@ export default function Hero() {
                 <div className="text-muted pl-4">
                   &nbsp;&nbsp;"frontend":{" "}
                   <span className="text-accent2">
-                    ["ReactJS","OData","REST"]
+                    ["ReactJS","JavaScript","TypeScript", "Redux"]
                   </span>
                   ,
                 </div>
                 <div className="text-muted pl-4">
-                  &nbsp;&nbsp;"past":{" "}
+                  &nbsp;&nbsp;"Others":{" "}
                   <span className="text-accent2">
-                    ["UBS","HSBC","Lloyds","UOB"]
+                    ["Web Automation", "Selenium WebDriver (Java)", "Splunk",
+                    "Jenkins"]
                   </span>
                 </div>
                 <div className="text-muted pl-4">{"}"}</div>
@@ -170,7 +171,7 @@ export default function Hero() {
                 </div>
                 <div className="text-muted pl-4">
                   🟢 Open to opportunities in{" "}
-                  <span className="text-accent2">SG / MY</span>
+                  <span className="text-accent2">SG / MY / Europe / Gulf</span>
                 </div>
                 <br />
                 <div>
