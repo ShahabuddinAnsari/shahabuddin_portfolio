@@ -22,7 +22,7 @@ export const skills = [
   {
     icon: "🔷",
     ui5Icon: "sap-ui5",
-    title: "SAP UI5 / Fiori",
+    title: "SAP Frontent (UI5 / Fiori)",
     tags: [
       { label: "SAPUI5", hot: true },
       { label: "Fiori Elements", hot: true },
@@ -35,7 +35,7 @@ export const skills = [
   {
     icon: "⚙️",
     ui5Icon: "sap-logo-shape",
-    title: "ABAP & Backend",
+    title: "SAP Backend (ABAP / RAP)",
     tags: [
       { label: "ABAP on S4/HANA", hot: true },
       { label: "ABAP on Cloud", hot: true },
@@ -58,12 +58,17 @@ export const skills = [
   },
   {
     icon: (
-      <svg viewBox="-11.5 -10.23174 23 20.46348" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
-        <circle cx="0" cy="0" r="2.05" fill="#61DAFB"/>
+      <svg
+        viewBox="-11.5 -10.23174 23 20.46348"
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+      >
+        <circle cx="0" cy="0" r="2.05" fill="#61DAFB" />
         <g stroke="#61DAFB" strokeWidth="1" fill="none">
-          <ellipse rx="11" ry="4.2"/>
-          <ellipse rx="11" ry="4.2" transform="rotate(60)"/>
-          <ellipse rx="11" ry="4.2" transform="rotate(120)"/>
+          <ellipse rx="11" ry="4.2" />
+          <ellipse rx="11" ry="4.2" transform="rotate(60)" />
+          <ellipse rx="11" ry="4.2" transform="rotate(120)" />
         </g>
       </svg>
     ),

@@ -6,14 +6,10 @@ import { skills } from "../data";
 
 function Tag({ label, hot }) {
   return (
-    <span
-      className={`font-mono text-xs px-2 py-0.5 rounded ${
-        hot ? "text-accent" : "text-muted bg-border"
-      }`}
-      style={hot ? { background: "rgba(0,212,170,0.12)" } : {}}
-    >
-      {label}
-    </span>
+    <li className="flex items-start gap-2 font-mono text-xs">
+      <span className={hot ? "text-accent" : "text-muted"}>▸</span>
+      <span className={hot ? "text-accent" : "text-muted"}>{label}</span>
+    </li>
   );
 }
 
@@ -54,11 +50,11 @@ export default function Skills() {
               <div className="font-display font-bold text-textmain text-base mb-3">
                 {card.title}
               </div>
-              <div className="flex flex-wrap gap-1.5">
+              <ul className="flex flex-col gap-1.5">
                 {card.tags.map((t) => (
                   <Tag key={t.label} {...t} />
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
