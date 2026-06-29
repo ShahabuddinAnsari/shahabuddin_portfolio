@@ -31,8 +31,8 @@ export default function Hero() {
               />
             </div>
 
-            <div className="flex items-center gap-3 mb-5">
-              <span className="block w-8 h-px bg-accent" />
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-5">
+              {/* <span className="block w-8 h-px bg-accent" /> */}
               <span className="font-mono text-accent text-xs tracking-widest uppercase">
                 {profile.title}
               </span>
@@ -48,13 +48,13 @@ export default function Hero() {
               Shahabuddin Ansari
             </h1> */}
             <h2
-              className="font-display font-extrabold1 text-textmain"
+              className="font-display font-extrabold1 text-textmain text-center md:text-left"
               style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)" }}
             >
               Shahabuddin Ansari
             </h2>
 
-            <p className="text-muted text-base mb-8 max-w-md leading-relaxed">
+            <p className="text-muted text-base mb-8 max-w-md leading-relaxed text-justify md:text-left">
               <strong className="text-textmain font-medium">16 years</strong>{" "}
               turning complex enterprise systems into clean, usable experiences.
               From QA roots to Frontend Web Developer (ReactJS) at tier-1 banks
@@ -73,7 +73,7 @@ export default function Hero() {
               </strong>
             </p>
 
-            <div className="flex gap-3 flex-wrap">
+            <div className="flex gap-3 flex-wrap justify-center md:justify-start">
               <a
                 href="#projects"
                 className="bg-accent font-semibold text-sm px-6 py-3 rounded hover:opacity-85 transition-opacity no-underline"
