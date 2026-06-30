@@ -19,9 +19,28 @@ export default function YouTube() {
         <div className="grid md:grid-cols-3 gap-8 items-start">
           {/* Channel card */}
           <div className="reveal bg-surface border border-border rounded p-6 text-center">
-            <div className="text-5xl mb-4">▶️</div>
+            <div className="flex justify-center mb-4">
+              <a
+                href={profile.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="64"
+                  height="64"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                    fill="#FF0000"
+                  />
+                </svg>
+              </a>
+            </div>
             <div className="font-display font-bold text-textmain text-base mb-2 leading-snug">
-              SAP UI5 From a React Dev's Lens
+              HikmahDevStudio
             </div>
             <p className="text-muted text-sm mb-5 leading-relaxed">
               Practical SAP tutorials for developers who already know modern

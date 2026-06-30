@@ -52,7 +52,6 @@ export const skills = [
       { label: "CAP - Cloud Application Programming Model", hot: true },
       { label: "BTP", hot: true },
       { label: "NodeJS", hot: true },
-      { label: "JavaScript / ES6", hot: true },
     ],
   },
   // {
@@ -83,10 +82,10 @@ export const skills = [
     ),
     title: "Frontend Web Dev (ReactJS)",
     tags: [
+      { label: "ReactJS", hot: false },
       { label: "JavaScript", hot: true },
-      { label: "React Hooks", hot: false },
-      { label: "Redux", hot: false },
       { label: "TypeScript", hot: false },
+      { label: "Redux", hot: false },
       { label: "REST APIs", hot: false },
       { label: "Jest", hot: false },
       { label: "Webpack", hot: false },
@@ -97,9 +96,9 @@ export const skills = [
     title: "QA & Automation",
     tags: [
       { label: "Selenium WebDriver (Java)", hot: false },
-      { label: "Manual QA", hot: false },
-      { label: "Test Planning", hot: false },
-      { label: "JIRA", hot: false },
+      { label: "JMeter - Performance Testing", hot: false },
+      { label: "Test Planning & Effort Estimation", hot: false },
+      { label: "Defect Management", hot: false },
     ],
   },
   {
