@@ -57,7 +57,8 @@ export default function Navbar() {
           Hire Me
         </a>
         <a
-          href="#contact"
+          href="/Shahabuddin_Ansari_CV.pdf"
+          download
           className="hidden md:inline-block bg-accent text-bg font-semibold text-sm px-4 py-2 rounded hover:opacity-85 transition-opacity no-underline"
           style={{ color: "#0a0a0f" }}
         >
@@ -101,7 +102,8 @@ export default function Navbar() {
           </a>
           <a
             id="myResumeLink"
-            href="#contact"
+            href="/Shahabuddin_Ansari_CV.pdf"
+            download
             onClick={() => setOpen(false)}
             className="bg-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline"
             style={{ color: "#0a0a0f" }}
