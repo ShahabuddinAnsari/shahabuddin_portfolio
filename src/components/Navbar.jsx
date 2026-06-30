@@ -56,14 +56,14 @@ export default function Navbar() {
         >
           Hire Me
         </a>
-        <a
+        {/* <a
           href="/Shahabuddin_Ansari_CV.pdf"
           download
           className="hidden md:inline-block bg-accent text-bg font-semibold text-sm px-4 py-2 rounded hover:opacity-85 transition-opacity no-underline"
           style={{ color: "#0a0a0f" }}
         >
           Resume
-        </a>
+        </a> */}
 
         {/* Hamburger */}
         <button
