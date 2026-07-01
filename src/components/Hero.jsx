@@ -119,7 +119,7 @@ export default function Hero() {
             </div>
 
             {/* Stats */}
-            <div className="flex gap-8 mt-10 pt-8 border-t border-border flex-wrap">
+            <div className="flex gap-8 mt-10 pt-8 pb-10 border-t border-border flex-wrap">
               {profile.stats.map((s) => (
                 <div key={s.label}>
                   <div className="font-display font-extrabold1 text-accent text-3xl leading-none">

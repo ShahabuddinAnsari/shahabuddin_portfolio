@@ -14,7 +14,7 @@ function Tag({ label, hot }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-surface">
+    <section id="skills" className="pt-8 pb-20 bg-surface">
       <div className="max-w-5xl mx-auto px-6">
         <div className="reveal mb-10">
           <p className="font-mono text-accent text-xs tracking-widest uppercase mb-2">
