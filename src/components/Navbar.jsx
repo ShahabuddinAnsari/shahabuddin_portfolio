@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTheme } from "../hooks/useTheme";
 
 const links = [
@@ -10,6 +10,67 @@ const links = [
   { href: "#learning", label: "Learning" },
   { href: "#contact", label: "Contact" },
 ];
+
+function ResumeDropdown() {
+  const [show, setShow] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    function handleClick(e) {
+      if (ref.current && !ref.current.contains(e.target)) setShow(false);
+    }
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setShow((s) => !s)}
+        className="border border-accent text-accent font-semibold text-xs px-3 py-1.5 rounded hover:bg-accent hover:text-bg transition-all flex items-center gap-1.5 bg-transparent cursor-pointer"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Resume
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+          style={{ transform: show ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}>
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+
+      {show && (
+        <div
+          className="absolute left-0 top-full mt-2 w-44 rounded border border-border overflow-hidden z-50"
+          style={{ background: "var(--color-surface)" }}
+        >
+          <a
+            href="/Shahabuddin_Ansari_CV.pdf"
+            download
+            onClick={() => setShow(false)}
+            className="flex items-center gap-2.5 px-4 py-3 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline border-b border-border"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Download PDF
+          </a>
+          <a
+            href="/Shahabuddin_Ansari_CV.docx"
+            download
+            onClick={() => setShow(false)}
+            className="flex items-center gap-2.5 px-4 py-3 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Download DOCX
+          </a>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -27,14 +88,17 @@ export default function Navbar() {
         className="max-w-5xl mx-auto px-6 h-15 flex items-center justify-between"
         style={{ height: "60px" }}
       >
-        {/* Logo */}
-        <a href="#hero" className="no-underline flex items-center">
-          <img
-            src="/logo.jpg"
-            alt="Shahabuddin Ansari"
-            className="h-9 w-auto object-contain"
-          />
-        </a>
+        {/* Logo + Resume dropdown */}
+        <div className="flex items-center gap-3">
+          <a href="#hero" className="no-underline flex items-center">
+            <img
+              src="/logo.jpg"
+              alt="Shahabuddin Ansari"
+              className="h-9 w-auto object-contain"
+            />
+          </a>
+          <ResumeDropdown />
+        </div>
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8 list-none">
@@ -126,13 +190,20 @@ export default function Navbar() {
             Hire Me
           </a>
           <a
-            id="myResumeLink"
             href="/Shahabuddin_Ansari_CV.pdf"
             download
             onClick={() => setOpen(false)}
             className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
           >
-            My Resume
+            ↓ PDF Resume
+          </a>
+          <a
+            href="/Shahabuddin_Ansari_CV.docx"
+            download
+            onClick={() => setOpen(false)}
+            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
+          >
+            ↓ DOCX Resume
           </a>
         </div>
       )}
