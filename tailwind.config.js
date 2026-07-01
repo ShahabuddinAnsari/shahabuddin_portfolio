@@ -4,14 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg:       '#0a0a0f',
-        surface:  '#111118',
-        border:   '#1e1e2e',
-        accent:   '#00d4aa',
-        accent2:  '#6c63ff',
-        textmain: '#e8e8f0',
-        muted:    '#6b6b80',
-        danger:   '#ff6b6b',
+        bg:       'var(--color-bg)',
+        surface:  'var(--color-surface)',
+        border:   'var(--color-border)',
+        accent:   'var(--color-accent)',
+        accent2:  'var(--color-accent2)',
+        textmain: 'var(--color-textmain)',
+        muted:    'var(--color-muted)',
+        danger:   'var(--color-danger)',
       },
       fontFamily: {
         display: ['Syne', 'sans-serif'],

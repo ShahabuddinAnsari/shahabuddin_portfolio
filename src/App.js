@@ -17,19 +17,19 @@ function App() {
       <Navbar />
       <main>
         <Hero />
-        <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         <Skills />
-        <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         <Experience />
-        <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         <Projects />
-        <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         <YouTube />
-        <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         <Blog />
-        <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         <Learning />
-        <hr style={{ border: 'none', borderTop: '1px solid #1e1e2e' }} />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         {/* Profile photo — mobile only, above contact */}
         <div className="flex justify-center py-12 md:hidden">
           <img
