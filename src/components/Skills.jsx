@@ -43,7 +43,7 @@ export default function Skills() {
                 {card.ui5Icon ? (
                   <ui5-icon
                     name={card.ui5Icon}
-                    style={{ width: "2rem", height: "2rem", color: "#e8e8f0" }}
+                    style={{ width: "2rem", height: "2rem", color: "var(--color-textmain)" }}
                   />
                 ) : (
                   card.icon
