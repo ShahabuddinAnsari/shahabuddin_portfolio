@@ -72,6 +72,24 @@ body {
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
+/* Navbar link underline animation */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-accent);
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
 /* Scroll reveal */
 .reveal {
   opacity: 0;
