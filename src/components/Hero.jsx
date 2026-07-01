@@ -54,24 +54,19 @@ export default function Hero() {
               Shahabuddin Ansari
             </h2>
 
-            <p className="text-muted text-base mb-8 max-w-md leading-relaxed text-justify md:text-left">
-              <strong className="text-textmain font-medium">16 years</strong>{" "}
-              turning complex enterprise systems into clean, usable experiences.
-              From QA roots to Frontend Web Developer (ReactJS) at tier-1 banks
-              — now deep in SAP full-stack:
-              <br />
-              <ul className="flex flex-col gap-1.5">
+            <div className="text-muted text-base mb-8 max-w-md leading-relaxed text-justify md:text-left">
+              <p>
+                <strong className="text-textmain font-medium">16 years</strong>{" "}
+                turning complex enterprise systems into clean, usable experiences.
+                From QA roots to Frontend Web Developer (ReactJS) at tier-1 banks
+                — now deep in SAP full-stack:
+              </p>
+              <ul className="flex flex-col gap-1.5 mt-2">
                 {skills_Full_Stack.map((tag) => (
                   <Tag key={tag.label} label={tag.label} hot={true} />
                 ))}
               </ul>
-              {/* <br />
-              Based in Mumbai.
-              <br />
-              <strong className="text-textmain font-medium">
-                Open to new opportunities.
-              </strong> */}
-            </p>
+            </div>
 
             <div
               className="grid grid-cols-2 gap-3"
