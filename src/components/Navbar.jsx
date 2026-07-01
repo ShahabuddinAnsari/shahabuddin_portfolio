@@ -42,7 +42,7 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="font-mono text-xs text-muted hover:text-textmain transition-colors tracking-wide no-underline"
+                className="nav-link font-mono font-bold text-sm text-muted hover:text-accent transition-colors tracking-wide no-underline active:scale-95 inline-block"
               >
                 {l.label}
               </a>
@@ -69,8 +69,7 @@ export default function Navbar() {
           </button>
           <a
             href="#contact"
-            className="bg-accent font-semibold text-sm px-4 py-2 rounded hover:opacity-85 transition-opacity no-underline"
-            style={{ color: "#0a0a0f" }}
+            className="border border-accent text-accent font-semibold text-sm px-4 py-2 rounded hover:bg-accent hover:text-bg transition-all no-underline"
           >
             Hire Me
           </a>
@@ -122,8 +121,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="bg-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline"
-            style={{ color: "#0a0a0f" }}
+            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
           >
             Hire Me
           </a>
@@ -132,8 +130,7 @@ export default function Navbar() {
             href="/Shahabuddin_Ansari_CV.pdf"
             download
             onClick={() => setOpen(false)}
-            className="bg-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline"
-            style={{ color: "#0a0a0f" }}
+            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
           >
             My Resume
           </a>
