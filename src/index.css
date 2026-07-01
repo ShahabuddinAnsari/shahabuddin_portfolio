@@ -3,9 +3,33 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --accent: #00d4aa;
-  --accent2: #6c63ff;
+/* Dark theme (default) */
+:root,
+[data-theme="dark"] {
+  --color-bg:       #0a0a0f;
+  --color-surface:  #111118;
+  --color-border:   #1e1e2e;
+  --color-accent:   #00d4aa;
+  --color-accent2:  #6c63ff;
+  --color-textmain: #e8e8f0;
+  --color-muted:    #6b6b80;
+  --color-danger:   #ff6b6b;
+  --color-navbar-bg: rgba(10,10,15,0.85);
+  --color-github:   #ffffff;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --color-bg:       #f0f0f6;
+  --color-surface:  #ffffff;
+  --color-border:   #dddde8;
+  --color-accent:   #009977;
+  --color-accent2:  #5a52d5;
+  --color-textmain: #0a0a0f;
+  --color-muted:    #4a4a60;
+  --color-danger:   #e05252;
+  --color-navbar-bg: rgba(240,240,246,0.88);
+  --color-github:   #24292f;
 }
 
 * {
@@ -16,8 +40,8 @@ html {
 }
 
 body {
-  background-color: #0a0a0f;
-  color: #e8e8f0;
+  background-color: var(--color-bg);
+  color: var(--color-textmain);
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
 }
