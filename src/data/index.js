@@ -11,7 +11,7 @@ export const profile = {
   github: "https://github.com/ShahabuddinAnsari",
   youtube: "https://www.youtube.com/channel/UCyYEXx3b4LbzXiwLWDuPazQ",
   stats: [
-    { num: "16", label: "Total Years of experience in Software Development" },
+    { num: "16", label: "Years of overall experience in IT" },
     { num: "3", label: "Years in SAP (Most recent)" },
     { num: "6", label: "Years in ReactJS" },
     { num: "3", label: "Countries worked (UK, Singapore, Malaysia)" },
