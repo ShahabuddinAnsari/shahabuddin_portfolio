@@ -27,14 +27,26 @@ export default function Navbar() {
         className="max-w-5xl mx-auto px-6 h-15 flex items-center justify-between"
         style={{ height: "60px" }}
       >
-        {/* Logo */}
-        <a href="#hero" className="no-underline flex items-center">
-          <img
-            src="/logo.jpg"
-            alt="Shahabuddin Ansari"
-            className="h-9 w-auto object-contain"
-          />
-        </a>
+        {/* Logo + Download Resume */}
+        <div className="flex items-center gap-3">
+          <a href="#hero" className="no-underline flex items-center">
+            <img
+              src="/logo.jpg"
+              alt="Shahabuddin Ansari"
+              className="h-9 w-auto object-contain"
+            />
+          </a>
+          <a
+            href="/Shahabuddin_Ansari_CV.pdf"
+            download
+            className="border border-accent text-accent font-semibold text-xs px-3 py-1.5 rounded hover:bg-accent hover:text-bg transition-all no-underline flex items-center gap-1.5"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Resume
+          </a>
+        </div>
 
         {/* Desktop links */}
         <ul className="hidden md:flex gap-8 list-none">
