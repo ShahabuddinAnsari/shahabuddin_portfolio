@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@ui5/webcomponents": "^2.23.2",
     "@ui5/webcomponents-icons": "^2.23.2",
+    "@vercel/analytics": "^2.0.1",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-scripts": "5.0.1",
