@@ -50,7 +50,7 @@ export default function YouTube() {
               href={profile.youtube}
               target="_blank"
               rel="noreferrer"
-              className="block bg-accent font-semibold text-sm px-4 py-2 rounded hover:opacity-85 transition-opacity no-underline"
+              className="block bg-accent font-semibold text-sm px-4 py-2 rounded-lg hover:opacity-85 transition-opacity no-underline"
               style={{ color: "#0a0a0f" }}
             >
               Subscribe

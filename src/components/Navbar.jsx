@@ -27,7 +27,7 @@ function ResumeDropdown() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setShow((s) => !s)}
-        className="border border-accent text-accent font-semibold text-xs px-3 py-1.5 rounded hover:bg-accent hover:text-bg transition-all flex items-center gap-1.5 bg-transparent cursor-pointer"
+        className="border border-accent text-accent font-semibold text-xs px-3 py-1.5 rounded-lg hover:bg-accent hover:text-bg transition-all flex items-center gap-1.5 bg-transparent cursor-pointer"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
@@ -124,7 +124,7 @@ export default function Navbar() {
             <img
               src="/logo.jpg"
               alt="Shahabuddin Ansari"
-              className="h-9 w-auto object-contain"
+              className="h-9 w-9 rounded-full object-cover"
             />
           </a>
           <ResumeDropdown />
@@ -163,7 +163,7 @@ export default function Navbar() {
           </button>
           <a
             href="#contact"
-            className="border border-accent text-accent font-semibold text-sm px-4 py-2 rounded hover:bg-accent hover:text-bg transition-all no-underline"
+            className="border border-accent text-accent font-semibold text-sm px-4 py-2 rounded-lg hover:bg-accent hover:text-bg transition-all no-underline"
           >
             Hire Me
           </a>
@@ -215,7 +215,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
+            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded-lg text-center no-underline hover:bg-accent hover:text-bg transition-all"
           >
             Hire Me
           </a>
