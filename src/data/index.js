@@ -118,7 +118,7 @@ export const skills = [
 export const experience = [
   {
     period: "Apr 2025 — Present",
-    location: "Mumbai, India",
+    location: "Mumbai",
     role: "SAP Fiori/UI5 Lead Consultant",
     company: "Tata Consultancy Services",
     client: "Siemens",
