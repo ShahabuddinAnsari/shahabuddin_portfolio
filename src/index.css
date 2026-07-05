@@ -9,7 +9,7 @@
   --color-bg:       #0a0a0f;
   --color-surface:  #111118;
   --color-border:   #1e1e2e;
-  --color-accent:   #00d4aa;
+  --color-accent:   #00fff0;
   --color-accent2:  #6c63ff;
   --color-textmain: #e8e8f0;
   --color-muted:    #6b6b80;
@@ -23,13 +23,17 @@
   --color-bg:       #f0f0f6;
   --color-surface:  #ffffff;
   --color-border:   #dddde8;
-  --color-accent:   #009977;
+  --color-accent:   #0f766e;
   --color-accent2:  #5a52d5;
   --color-textmain: #0a0a0f;
   --color-muted:    #4a4a60;
   --color-danger:   #e05252;
   --color-navbar-bg: rgba(240,240,246,0.88);
   --color-github:   #24292f;
+}
+
+.text-accent {
+  font-size: 1.1em;
 }
 
 * {
