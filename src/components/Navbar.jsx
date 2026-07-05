@@ -41,30 +41,60 @@ function ResumeDropdown() {
 
       {show && (
         <div
-          className="absolute left-0 top-full mt-2 w-44 rounded border border-border overflow-hidden z-50"
+          className="absolute left-0 top-full mt-2 w-56 rounded border border-border overflow-hidden z-50"
           style={{ background: "var(--color-surface)" }}
         >
+          {/* With Photo */}
+          <div className="px-3 pt-2.5 pb-1 font-mono text-xs text-muted uppercase tracking-widest">
+            With Photo
+          </div>
           <a
-            href="/Shahabuddin_Ansari_CV.pdf"
+            href="/SHAHABUDDIN_ANSARI_SAP_Full_Stack_With_Photo.pdf"
             download
             onClick={() => setShow(false)}
-            className="flex items-center gap-2.5 px-4 py-3 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline border-b border-border"
+            className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
             </svg>
-            Download PDF
+            PDF
           </a>
           <a
-            href="/Shahabuddin_Ansari_CV.docx"
+            href="/SHAHABUDDIN_ANSARI_SAP_Full_Stack_With_Photo.docx"
             download
             onClick={() => setShow(false)}
-            className="flex items-center gap-2.5 px-4 py-3 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
+            className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline border-b border-border"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
             </svg>
-            Download DOCX
+            DOCX
+          </a>
+          {/* Without Photo */}
+          <div className="px-3 pt-2.5 pb-1 font-mono text-xs text-muted uppercase tracking-widest">
+            Without Photo
+          </div>
+          <a
+            href="/SHAHABUDDIN_ANSARI_SAP_Full_Stack_Without_Photo.pdf"
+            download
+            onClick={() => setShow(false)}
+            className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            </svg>
+            PDF
+          </a>
+          <a
+            href="/SHAHABUDDIN_ANSARI_SAP_Full_Stack_Without_Photo.docx"
+            download
+            onClick={() => setShow(false)}
+            className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            </svg>
+            DOCX
           </a>
         </div>
       )}
@@ -188,22 +218,6 @@ export default function Navbar() {
             className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
           >
             Hire Me
-          </a>
-          <a
-            href="/Shahabuddin_Ansari_CV.pdf"
-            download
-            onClick={() => setOpen(false)}
-            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
-          >
-            ↓ PDF Resume
-          </a>
-          <a
-            href="/Shahabuddin_Ansari_CV.docx"
-            download
-            onClick={() => setOpen(false)}
-            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded text-center no-underline hover:bg-accent hover:text-bg transition-all"
-          >
-            ↓ DOCX Resume
           </a>
         </div>
       )}
