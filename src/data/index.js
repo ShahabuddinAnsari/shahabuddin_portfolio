@@ -132,7 +132,7 @@ export const experience = [
   },
   {
     period: "Jan 2024 — Apr 2025",
-    location: "Kuala Lumpur (Malaysia)",
+    location: "Kuala Lumpur",
     role: "SAP UI5/Fiori Consultant",
     company: "EPS Ventures",
     logo: "/companyLogo/eps_venturs_logo.jpeg",

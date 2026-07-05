@@ -90,19 +90,22 @@ export default function Experience() {
                   <img
                     src={item.logo}
                     alt=""
-                    className="w-10 h-10 rounded-sm object-contain bg-white/5 shrink-0"
+                    className="w-14 h-14 rounded-lg border border-accent object-contain bg-white/5 shrink-0"
                   />
                 )}
                 <div className="flex flex-col gap-0.5">
-                  <div className="flex flex-wrap items-center gap-x-2">
-                    <span className="text-accent font-medium text-sm">
-                      {item.company}
-                    </span>
-                    <span className="text-muted">·</span>
-                    <span className="text-accent font-medium text-sm">
-                      {item.location}
-                    </span>
-                  </div>
+                  <span
+                    className="text-accent font-medium text-sm"
+                    style={{ fontSize: "0.9rem" }}
+                  >
+                    {item.company}
+                  </span>
+                  <span
+                    className="text-accent font-medium"
+                    style={{ fontSize: "0.9rem" }}
+                  >
+                    {item.location}
+                  </span>
                   <span className="font-mono text-xs text-muted">
                     {item.period}
                     {/* ({getDuration(item.period)}) */}
