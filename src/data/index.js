@@ -122,6 +122,7 @@ export const experience = [
     role: "SAP Fiori/UI5 Lead Consultant",
     company: "Tata Consultancy Services",
     client: "Siemens",
+    logo: "/companyLogo/tcs_logo.jpeg",
     current: true,
     bullets: [
       "Delivered a custom access-governance Fiori application end to end: form-based requests for system access, role assignment/extension, and user unlock, routed through profile-based approval workflows — replacing a manual access-management process. (SAPUI5, OData, ABAP)",
@@ -134,6 +135,7 @@ export const experience = [
     location: "Kuala Lumpur (Malaysia)",
     role: "SAP UI5/Fiori Consultant",
     company: "EPS Ventures",
+    logo: "/companyLogo/eps_venturs_logo.jpeg",
     current: false,
     bullets: [
       "Extended the standard SAP Fiori MM Purchase Order Approval application (Freestyle SAPUI5) to surface additional procurement context for approvers — plant, request date, attachment submitter — accelerating approval decisions. ",
@@ -147,6 +149,7 @@ export const experience = [
     role: "Senior Frontend Developer",
     company: "Optimum Solutions",
     client: "UOB (United Overseas Bank)",
+    logo: "/companyLogo/optimum_solutions_logo.jpeg",
     current: false,
     bullets: [
       "Production ownership of UOB's SME digital banking portal (ReactJS/Redux): incident investigation, root-cause analysis, and resolution reporting to bank stakeholders.",
@@ -159,6 +162,7 @@ export const experience = [
     location: "Pune",
     role: "Senior Frontend Developer",
     company: "TekSystems",
+    logo: "/companyLogo/teksystems_logo.jpeg",
     client: "HSBC",
     current: false,
     bullets: [
@@ -172,6 +176,7 @@ export const experience = [
     location: "Mumbai",
     role: "Frontend Developer",
     company: "UBS",
+    logo: "/companyLogo/ubs_logo.jpeg",
     current: false,
     bullets: [
       "Developed responsive ReactJS/Redux applications for UBS's investment-banking e-trading platform, covering creation, approval, and monitoring workflows across integrated systems.",
@@ -184,6 +189,7 @@ export const experience = [
     location: "Pune",
     role: "Lead QA (Automation)",
     company: "Synechron Technology Solutions",
+    logo: "/companyLogo/synechron_logo.jpeg",
     client: "Asurion",
     current: false,
     bullets: [
@@ -196,6 +202,7 @@ export const experience = [
     location: "Pune",
     role: "Senior Test Engineer",
     company: "Cognizant Technology Solutions",
+    logo: "/companyLogo/cognizant_logo.png",
     client: "Lloyds Banking Group",
     current: false,
     bullets: [

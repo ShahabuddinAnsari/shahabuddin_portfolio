@@ -1,45 +1,45 @@
 import { experience } from "../data";
 
-const MONTHS = {
-  Jan: 0,
-  Feb: 1,
-  Mar: 2,
-  Apr: 3,
-  May: 4,
-  Jun: 5,
-  Jul: 6,
-  Aug: 7,
-  Sep: 8,
-  Oct: 9,
-  Nov: 10,
-  Dec: 11,
-};
+// const MONTHS = {
+//   Jan: 0,
+//   Feb: 1,
+//   Mar: 2,
+//   Apr: 3,
+//   May: 4,
+//   Jun: 5,
+//   Jul: 6,
+//   Aug: 7,
+//   Sep: 8,
+//   Oct: 9,
+//   Nov: 10,
+//   Dec: 11,
+// };
 
-function parseMonthYear(str) {
-  const [mon, year] = str.trim().split(/\s+/);
-  return new Date(parseInt(year, 10), MONTHS[mon] ?? 0, 1);
-}
+// function parseMonthYear(str) {
+//   const [mon, year] = str.trim().split(/\s+/);
+//   return new Date(parseInt(year, 10), MONTHS[mon] ?? 0, 1);
+// }
 
-function getDuration(period) {
-  const [startStr, endStr] = period.split(/[-–—]+/).map((p) => p.trim());
-  const start = parseMonthYear(startStr);
-  const end = /present/i.test(endStr) ? new Date() : parseMonthYear(endStr);
+// function getDuration(period) {
+//   const [startStr, endStr] = period.split(/[-–—]+/).map((p) => p.trim());
+//   const start = parseMonthYear(startStr);
+//   const end = /present/i.test(endStr) ? new Date() : parseMonthYear(endStr);
 
-  let months =
-    (end.getFullYear() - start.getFullYear()) * 12 +
-    (end.getMonth() - start.getMonth());
-  months = Math.max(months, 0);
+//   let months =
+//     (end.getFullYear() - start.getFullYear()) * 12 +
+//     (end.getMonth() - start.getMonth());
+//   months = Math.max(months, 0);
 
-  const years = Math.floor(months / 12);
-  const remMonths = months % 12;
+//   const years = Math.floor(months / 12);
+//   const remMonths = months % 12;
 
-  const parts = [];
-  if (years > 0) parts.push(`${years} ${years === 1 ? "Yr" : "Yrs"}`);
-  if (remMonths > 0 || parts.length === 0)
-    parts.push(`${remMonths} ${remMonths === 1 ? "Month" : "Months"}`);
+//   const parts = [];
+//   if (years > 0) parts.push(`${years} ${years === 1 ? "Yr" : "Yrs"}`);
+//   if (remMonths > 0 || parts.length === 0)
+//     parts.push(`${remMonths} ${remMonths === 1 ? "Month" : "Months"}`);
 
-  return parts.join(" ");
-}
+//   return parts.join(" ");
+// }
 
 export default function Experience() {
   return (
@@ -77,25 +77,36 @@ export default function Experience() {
                 }}
               />
 
-              {/* Meta */}
-              <div className="flex gap-4 flex-wrap font-mono text-xs text-muted mb-1">
-                <span>
-                  {item.period} ({getDuration(item.period)})
+              {/* Role */}
+              <div className="mb-2">
+                <span className="text-accent font-bold text-lg">
+                  {item.role}
                 </span>
               </div>
 
-              {/* Role + Company + Location */}
-              <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-baseline gap-x-2 mb-3">
-                <span className="font-display font-bold text-textmain text-lg">
-                  {item.role}
-                </span>
-                <div className="flex flex-wrap items-baseline gap-x-2">
-                  <span className="hidden sm:inline text-muted">·</span>
-                  <span className="text-accent font-medium text-sm">
-                    {item.company}
+              {/* Logo + (Company/Location row, Duration row) */}
+              <div className="flex items-center gap-3 mb-3">
+                {item.logo && (
+                  <img
+                    src={item.logo}
+                    alt=""
+                    className="w-10 h-10 rounded-sm object-contain bg-white/5 shrink-0"
+                  />
+                )}
+                <div className="flex flex-col gap-0.5">
+                  <div className="flex flex-wrap items-center gap-x-2">
+                    <span className="text-accent font-medium text-sm">
+                      {item.company}
+                    </span>
+                    <span className="text-muted">·</span>
+                    <span className="text-accent font-medium text-sm">
+                      {item.location}
+                    </span>
+                  </div>
+                  <span className="font-mono text-xs text-muted">
+                    {item.period}
+                    {/* ({getDuration(item.period)}) */}
                   </span>
-                  <span className="text-muted">·</span>
-                  <span className="text-muted text-sm">{item.location}</span>
                 </div>
               </div>
 
