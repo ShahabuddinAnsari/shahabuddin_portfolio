@@ -143,13 +143,29 @@ export const experience = [
       "Independently managed the full development lifecycle — requirement analysis, design, build, testing, and production deployment — in a client-facing onsite role in Kuala Lumpur.",
     ],
   },
+
   {
-    period: "Aug 2022 -  Jan 2024",
+    period: "Jun 2023 -  Jan 2024",
     location: "Singapore",
     role: "Senior Frontend Developer",
     company: "Optimum Solutions",
     client: "UOB (United Overseas Bank)",
     logo: "/companyLogo/optimum_solutions_logo.jpeg",
+    current: false,
+    bullets: [
+      "L3 Production support for Web application",
+      "Production issues analysis & bug fixes",
+      "Enhancements to the applications",
+      "Monitoring production users activity using Splunk & creating monthly reports for management",
+    ],
+  },
+  {
+    period: "Aug 2022 -  Jun 2023",
+    location: "Singapore",
+    role: "Senior Frontend Developer",
+    company: "Recruit Express",
+    client: "UOB (United Overseas Bank)",
+    logo: "/companyLogo/recruit_express_logo.jpeg",
     current: false,
     bullets: [
       "Production ownership of UOB's SME digital banking portal (ReactJS/Redux): incident investigation, root-cause analysis, and resolution reporting to bank stakeholders.",
