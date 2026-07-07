@@ -33,7 +33,7 @@ export default function Hero() {
 
             <div className="flex items-center justify-center md:justify-start gap-3 mb-5">
               {/* <span className="block w-8 h-px bg-accent" /> */}
-              <span className="font-mono text-accent text-xs tracking-widest uppercase">
+              <span className="font-mono text-accent text-xs tracking-wide uppercase">
                 {profile.title}
               </span>
             </div>

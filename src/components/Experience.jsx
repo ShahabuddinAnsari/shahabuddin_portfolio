@@ -46,7 +46,7 @@ export default function Experience() {
     <section id="experience" className="py-20 bg-bg">
       <div className="max-w-5xl mx-auto px-6">
         <div className="reveal mb-10">
-          <p className="font-mono text-accent text-xs tracking-widest uppercase mb-2">
+          <p className="font-mono text-accent text-xs tracking-wide uppercase mb-2">
             Where I've been
           </p>
           <h2
