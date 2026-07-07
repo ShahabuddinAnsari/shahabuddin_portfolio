@@ -6,7 +6,7 @@ export const profile = {
   stack: ["UI5", "Fiori", "ABAP", "CDS", "RAP", "BTP"],
   location: "Mumbai, India",
   openTo: "Available for New Opportunities",
-  email: "ansari.extc@gmail.com",
+  email: "shahabuddin.mb.ansari@gmail.com",
   linkedin: "https://www.linkedin.com/in/shahabuddinansari/",
   github: "https://github.com/ShahabuddinAnsari",
   youtube: "https://www.youtube.com/channel/UCyYEXx3b4LbzXiwLWDuPazQ",

@@ -8,7 +8,7 @@ const links = [
   { href: "#youtube", label: "YouTube" },
   { href: "#blog", label: "Blog" },
   { href: "#learning", label: "Learning" },
-  { href: "#contact", label: "Contact" },
+  // { href: "#contact", label: "Contact" },
 ];
 
 function ResumeDropdown() {
@@ -29,13 +29,38 @@ function ResumeDropdown() {
         onClick={() => setShow((s) => !s)}
         className="border border-accent text-accent font-semibold text-xs px-3 py-1.5 rounded-lg hover:bg-accent hover:text-bg transition-all flex items-center gap-1.5 bg-transparent cursor-pointer"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="12"
+          height="12"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
         </svg>
         Resume
-        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-          style={{ transform: show ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}>
-          <polyline points="6 9 12 15 18 9"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="10"
+          height="10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{
+            transform: show ? "rotate(180deg)" : "rotate(0deg)",
+            transition: "transform 0.2s",
+          }}
+        >
+          <polyline points="6 9 12 15 18 9" />
         </svg>
       </button>
 
@@ -54,8 +79,19 @@ function ResumeDropdown() {
             onClick={() => setShow(false)}
             className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
             </svg>
             PDF
           </a>
@@ -65,8 +101,19 @@ function ResumeDropdown() {
             onClick={() => setShow(false)}
             className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline border-b border-border"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
             </svg>
             DOCX
           </a>
@@ -80,8 +127,19 @@ function ResumeDropdown() {
             onClick={() => setShow(false)}
             className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
             </svg>
             PDF
           </a>
@@ -91,14 +149,90 @@ function ResumeDropdown() {
             onClick={() => setShow(false)}
             className="flex items-center gap-2.5 px-4 py-2.5 text-xs font-semibold text-textmain hover:bg-accent hover:text-bg transition-colors no-underline"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="13"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
             </svg>
             DOCX
           </a>
         </div>
       )}
     </div>
+  );
+}
+
+function ThemeToggle({ theme, toggleTheme, size = "md" }) {
+  const isDark = theme === "dark";
+  const trackW = size === "sm" ? 40 : 46;
+  const trackH = size === "sm" ? 22 : 24;
+  const knob = size === "sm" ? 16 : 18;
+  const travel = trackW - knob - 4;
+
+  return (
+    <button
+      onClick={toggleTheme}
+      className="relative flex-shrink-0 rounded-full border border-border bg-transparent cursor-pointer transition-colors hover:border-accent"
+      style={{ width: trackW, height: trackH, padding: 2 }}
+      title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+    >
+      <span
+        className="flex items-center justify-center rounded-full border border-border bg-accent text-bg transition-transform"
+        style={{
+          width: knob,
+          height: knob,
+          transform: isDark ? `translateX(${travel}px)` : "translateX(0)",
+          transition: "transform 0.2s ease",
+        }}
+      >
+        {isDark ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={knob - 6}
+            height={knob - 6}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={knob - 6}
+            height={knob - 6}
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        )}
+      </span>
+    </button>
   );
 }
 
@@ -146,24 +280,10 @@ export default function Navbar() {
 
         {/* CTA + Theme toggle */}
         <div className="hidden md:flex items-center gap-3">
-          <button
-            onClick={toggleTheme}
-            className="w-9 h-9 flex items-center justify-center rounded border border-border text-muted hover:border-accent hover:text-accent transition-colors bg-transparent cursor-pointer"
-            title={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
-          >
-            {theme === "dark" ? (
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-              </svg>
-            )}
-          </button>
+          <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
           <a
             href="#contact"
-            className="border border-accent text-accent font-semibold text-sm px-4 py-2 rounded-lg hover:bg-accent hover:text-bg transition-all no-underline"
+            className="border border-accent text-accent font-semibold text-xs px-4 py-2 rounded-lg hover:bg-accent hover:text-bg transition-all no-underline"
           >
             Hire Me
           </a>
@@ -171,20 +291,7 @@ export default function Navbar() {
 
         {/* Hamburger + mobile theme toggle */}
         <div className="md:hidden flex items-center gap-3">
-          <button
-            onClick={toggleTheme}
-            className="w-8 h-8 flex items-center justify-center rounded border border-border text-muted hover:border-accent hover:text-accent transition-colors bg-transparent cursor-pointer"
-          >
-            {theme === "dark" ? (
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-              </svg>
-            ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-              </svg>
-            )}
-          </button>
+          <ThemeToggle theme={theme} toggleTheme={toggleTheme} size="sm" />
           <button
             className="flex flex-col gap-1.5 cursor-pointer bg-transparent border-0 p-0"
             onClick={() => setOpen(!open)}
@@ -215,7 +322,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="border border-accent text-accent text-sm font-semibold px-4 py-2 rounded-lg text-center no-underline hover:bg-accent hover:text-bg transition-all"
+            className="border border-accent text-accent text-xs font-semibold px-4 py-2 rounded-lg text-center no-underline hover:bg-accent hover:text-bg transition-all"
           >
             Hire Me
           </a>
