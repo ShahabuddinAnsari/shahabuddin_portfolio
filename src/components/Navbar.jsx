@@ -27,7 +27,7 @@ function ResumeDropdown() {
     <div ref={ref} className="relative">
       <button
         onClick={() => setShow((s) => !s)}
-        className="border border-accent text-accent font-semibold text-xs px-3 py-1.5 rounded-lg hover:bg-accent hover:text-bg transition-all flex items-center gap-1.5 bg-transparent cursor-pointer"
+        className="border border-accent text-accent font-semibold text-xs px-3 py-1.5 rounded hover:bg-accent hover:text-bg transition-all flex items-center gap-1.5 bg-transparent cursor-pointer"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +283,7 @@ export default function Navbar() {
           <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
           <a
             href="#contact"
-            className="border border-accent text-accent font-semibold text-xs px-4 py-2 rounded-lg hover:bg-accent hover:text-bg transition-all no-underline"
+            className="border border-accent text-accent font-semibold text-xs px-4 py-2 rounded hover:bg-accent hover:text-bg transition-all no-underline"
           >
             Hire Me
           </a>
@@ -322,7 +322,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="border border-accent text-accent text-xs font-semibold px-4 py-2 rounded-lg text-center no-underline hover:bg-accent hover:text-bg transition-all"
+            className="border border-accent text-accent text-xs font-semibold px-4 py-2 text-center no-underline rounded hover:bg-accent hover:text-bg transition-all"
           >
             Hire Me
           </a>
