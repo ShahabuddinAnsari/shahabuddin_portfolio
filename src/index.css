@@ -20,15 +20,15 @@
 
 /* Light theme */
 [data-theme="light"] {
-  --color-bg:       #f0f0f6;
+  --color-bg:       #eaf1f0;
   --color-surface:  #ffffff;
-  --color-border:   #dddde8;
+  --color-border:   #dbe4e2;
   --color-accent:   #0f766e;
   --color-accent2:  #5a52d5;
   --color-textmain: #0a0a0f;
   --color-muted:    #4a4a60;
   --color-danger:   #e05252;
-  --color-navbar-bg: rgba(240,240,246,0.88);
+  --color-navbar-bg: rgba(234,241,240,0.88);
   --color-github:   #24292f;
 }
 
