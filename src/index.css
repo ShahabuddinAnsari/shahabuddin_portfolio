@@ -6,15 +6,15 @@
 /* Dark theme (default) */
 :root,
 [data-theme="dark"] {
-  --color-bg:       #0a0a0f;
-  --color-surface:  #111118;
-  --color-border:   #1e1e2e;
-  --color-accent:   #00fff0;
+  --color-bg:       #1e1e1e;
+  --color-surface:  #262629;
+  --color-border:   #35353c;
+  --color-accent:   #e8e8e8;
   --color-accent2:  #6c63ff;
   --color-textmain: #e8e8f0;
   --color-muted:    #6b6b80;
   --color-danger:   #ff6b6b;
-  --color-navbar-bg: rgba(10,10,15,0.85);
+  --color-navbar-bg: rgba(30,30,30,0.85);
   --color-github:   #ffffff;
 }
 
@@ -34,6 +34,13 @@
 
 .text-accent {
   font-size: 1.1em;
+}
+
+.subscribe-btn {
+  color: #0a0a0f;
+}
+[data-theme="light"] .subscribe-btn {
+  color: #ffffff;
 }
 
 * {
