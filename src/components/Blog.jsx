@@ -5,7 +5,7 @@ export default function Blog() {
     <section id="blog" className="py-20 bg-surface">
       <div className="max-w-5xl mx-auto px-6">
         <div className="reveal mb-10">
-          <p className="font-mono text-accent text-xs tracking-widest uppercase mb-2">
+          <p className="font-mono text-accent text-xs tracking-wide uppercase mb-2">
             Things I write about
           </p>
           <h2

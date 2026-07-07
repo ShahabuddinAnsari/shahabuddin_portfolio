@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-surface">
       <div className="max-w-5xl mx-auto px-6">
           <div className="max-w-lg mx-auto text-center reveal">
-          <p className="font-mono text-accent text-xs tracking-widest uppercase mb-2">
+          <p className="font-mono text-accent text-xs tracking-wide uppercase mb-2">
             Let's connect
           </p>
           <h2
