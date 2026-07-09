@@ -313,6 +313,14 @@ export const blogs = [
   },
 ];
 
+export const certifications = [
+  {
+    status: "planned",
+    title: "SAP Certified Development Associate - SAP Fiori Application Developer",
+    desc: "Targeting July 2026. Validates hands-on SAPUI5/Fiori development skills built over 3 years on live S/4HANA projects.",
+  },
+];
+
 export const learning = [
   {
     status: "done",

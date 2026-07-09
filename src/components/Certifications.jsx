@@ -1,28 +1,23 @@
-import { learning } from "../data";
+import { certifications } from "../data";
 
 const badge = {
-  done: { cls: "text-accent", bg: "rgba(0,212,170,0.12)", label: "✓ Complete" },
-  active: {
-    cls: "text-accent2",
-    bg: "rgba(108,99,255,0.15)",
-    label: "⚡ Active",
-  },
-  next: { cls: "text-danger", bg: "rgba(255,107,107,0.12)", label: "↑ Next" },
+  done: { label: "✓ Complete", color: "#00d4aa", bg: "rgba(0,212,170,0.12)" },
+  planned: { label: "↑ Planned", color: "#ff6b6b", bg: "rgba(255,107,107,0.12)" },
 };
 
-export default function Learning() {
+export default function Certifications() {
   return (
-    <section id="learning" className="py-20 bg-bg">
+    <section id="certifications" className="py-20 bg-bg">
       <div className="max-w-7xl mx-auto px-6">
         <div className="reveal mb-10">
           <p className="font-mono text-accent text-xs tracking-wide uppercase mb-2">
-            My roadmap
+            Credentials
           </p>
           <h2
             className="font-display font-extrabold1 text-textmain"
             style={{ fontSize: "clamp(1.8rem, 4vw, 2.6rem)" }}
           >
-            Learning Resources
+            Certifications
           </h2>
         </div>
 
@@ -32,25 +27,16 @@ export default function Learning() {
             gridTemplateColumns: "repeat(auto-fill, minmax(270px, 1fr))",
           }}
         >
-          {learning.map((item) => {
+          {certifications.map((item) => {
             const b = badge[item.status];
             return (
               <div
                 key={item.title}
-                className="reveal bg-surface border border-border rounded p-5 hover:border-accent2 transition-colors duration-200"
+                className="reveal bg-surface border border-border rounded p-5 hover:border-accent transition-colors duration-200"
               >
                 <span
                   className="inline-block font-mono text-xs px-2 py-0.5 rounded mb-3 tracking-wider uppercase"
-                  // CORRECT — one 'color' key
-                  style={{
-                    background: b.bg,
-                    color:
-                      item.status === "done"
-                        ? "#00d4aa"
-                        : item.status === "active"
-                          ? "#6c63ff"
-                          : "#ff6b6b",
-                  }}
+                  style={{ background: b.bg, color: b.color }}
                 >
                   {b.label}
                 </span>

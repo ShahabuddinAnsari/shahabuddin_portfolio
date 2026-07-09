@@ -3,7 +3,7 @@ import { projects } from "../data";
 export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-surface">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="reveal mb-10">
           <p className="font-mono text-accent text-xs tracking-wide uppercase mb-2">
             Things I've built
