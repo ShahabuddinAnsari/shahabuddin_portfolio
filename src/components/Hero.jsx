@@ -17,7 +17,7 @@ export default function Hero() {
       className="min-h-screen flex items-center pt-20"
       style={{ paddingTop: "80px" }}
     >
-      <div className="max-w-5xl mx-auto px-6 w-full">
+      <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="grid md:grid-cols-2 gap-16 items-start">
           {/* Left */}
           <div>

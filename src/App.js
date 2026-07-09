@@ -8,6 +8,7 @@ import Projects   from './components/Projects';
 import YouTube    from './components/YouTube';
 import Blog       from './components/Blog';
 import Learning   from './components/Learning';
+import Certifications from './components/Certifications';
 import Contact    from './components/Contact';
 import Footer     from './components/Footer';
 
@@ -31,6 +32,8 @@ function App() {
         <Blog />
         <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         <Learning />
+        <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
+        <Certifications />
         <hr style={{ border: 'none', borderTop: '1px solid var(--color-border)' }} />
         {/* Profile photo — mobile only, above contact */}
         <div className="flex justify-center py-12 md:hidden">

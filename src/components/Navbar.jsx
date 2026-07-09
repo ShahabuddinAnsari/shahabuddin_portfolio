@@ -8,6 +8,7 @@ const links = [
   { href: "#youtube", label: "YouTube" },
   { href: "#blog", label: "Blog" },
   { href: "#learning", label: "Learning" },
+  { href: "#certifications", label: "Certifications" },
   // { href: "#contact", label: "Contact" },
 ];
 
@@ -249,7 +250,7 @@ export default function Navbar() {
       }}
     >
       <div
-        className="max-w-5xl mx-auto px-6 h-15 flex items-center justify-between"
+        className="max-w-7xl mx-auto px-6 h-15 flex items-center justify-between"
         style={{ height: "60px" }}
       >
         {/* Logo + Resume dropdown */}
