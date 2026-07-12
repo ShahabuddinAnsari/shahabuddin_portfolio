@@ -1,11 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { useTheme } from "../hooks/useTheme";
+import { profile } from "../data";
 
 const links = [
   { href: "#skills", label: "Skills" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
   { href: "#youtube", label: "YouTube" },
+  { href: profile.github, label: "GitHub", external: true },
   { href: "#blog", label: "Blog" },
   { href: "#learning", label: "Learning" },
   { href: "#certifications", label: "Certifications" },
@@ -271,6 +273,8 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
+                target={l.external ? "_blank" : undefined}
+                rel={l.external ? "noopener noreferrer" : undefined}
                 className="nav-link font-mono font-bold text-sm text-muted hover:text-accent transition-colors tracking-wide no-underline active:scale-95 inline-block"
               >
                 {l.label}
@@ -314,6 +318,8 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
+              target={l.external ? "_blank" : undefined}
+              rel={l.external ? "noopener noreferrer" : undefined}
               onClick={() => setOpen(false)}
               className="font-mono text-sm text-muted hover:text-textmain no-underline"
             >
